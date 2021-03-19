@@ -31,7 +31,8 @@ import Table from "@ckeditor/ckeditor5-table/src/table";
 import TableToolbar from "@ckeditor/ckeditor5-table/src/tabletoolbar";
 import TextTransformation from "@ckeditor/ckeditor5-typing/src/texttransformation";
 import CloudServices from "@ckeditor/ckeditor5-cloud-services/src/cloudservices";
-import Alignment from "@ckeditor/ckeditor5-alignment/src/alignment";
+
+import HorizontalLine from "@ckeditor/ckeditor5-horizontal-line/src/horizontalline";
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -61,15 +62,15 @@ ClassicEditor.builtinPlugins = [
 	Table,
 	TableToolbar,
 	TextTransformation,
-	Alignment,
+	HorizontalLine,
 ];
 
 // Editor configuration.
 ClassicEditor.defaultConfig = {
 	toolbar: {
 		items: [
-      "alignment",
-			"heading",
+      "heading",
+			"horizontalLine",
 			"|",
 			"bold",
 			"italic",
